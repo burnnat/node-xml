@@ -63,6 +63,14 @@ Called at the start of a document
 
  Called at the end of the document parse
 
+##parser.onDTD(function(doctype) {})##
+
+Called on a doctype definition
+* Arguments
+	* root - a string representing the defined root element name
+	* pubId - a string representing the DTD public identifier (`null` if omitted)
+	* sysId - a string representing the DTD system identifier (`null` if omitted)
+
 ##parser.onStartElementNS(function(elem, attrs, prefix, uri, namespaces) {})##
 
 Called on an open element tag
